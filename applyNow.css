@@ -1,0 +1,51 @@
+.form-group {
+    margin-left: 15px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form_select {
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.family_image {
+    max-width: 100%;
+    justify-content: right;
+}
+
+.btn-primary {
+    background-color: rgb(134, 248, 229);
+    color: black;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: deepskyblue;
+    outline: blue;
+}
+
+.apply_btn {
+    position: fixed;
+    left: -35px;
+    top: 350px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+@media screen and (max-width:600px) {
+    .apply_btn {
+        top: 450px;
+    }
+}
+
+.submissionModal {
+    background-color: deepskyblue;
+}

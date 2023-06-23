@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Family Property Management</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Property_management_company/navBar.css">
+    <link rel="stylesheet" href="../Property_management_company/applyNow.css">
+    <link rel="stylesheet" href="../Property_management_company/properties.css">
+    <script src="../Property_management_company/js.js"></script>
+    </body>
+    <!--Adds company name/header-->
+    <div class="container">
+      <h1>Post Properties</h1>
+    </div>
+    <!--adds the top nav bar-->
+    <div class="topnav" id="myTopnav">
+      <a href="../Property_management_company/home.html">Home</a>
+      <a href="../Property_management_company/properties.html" class="active">Properties</a>
+      <a href="#contact">Contact Us</a>
+      <a href="../Property_management_company/about_us.html">About Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary apply_btn" data-toggle="modal" data-target="#exampleModal">
+    Apply Now!
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Request More Information</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row form-body">
+              <form class="needs-validation" novalidate>
+                <div class="col-lg">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="first_name" required/>
+                  <div class="invalid-feedback">Please enter a first name</div>
+                  <div class="valid-feedback">Thanks!</div>
+                </div>
+                <div class="col-lg">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="last_name" required/>
+                  <div class="invalid-feedback">Please enter a last name</div>
+                  <div class="valid-feedback">Thanks!</div>
+                </div>
+                <div class="col-lg">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" required/>
+                  <div class="invalid-feedback">Please enter a valid email address</div>
+                  <div class="valid-feedback">Thanks!</div>
+                </div>
+                <div class="col-lg">
+                  <label for="propertyInquiry">Which Property Are You Inquiring About?</label>
+                  <select class="form-control" aria-label="Default select" required>
+                    <option selected> </option>
+                    <option value="1">123 Home St</option>
+                    <option value="2">19 Square</option>
+                    <option value="3">555 Shire</option>
+                    <option value="4">Any available property</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a property</div>
+                  <div class="valid-feedback">Thanks!</div>
+                </div>
+                <div class="col-lg">
+                  <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#submissionModal" data-dismiss="modal">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="submissionModal" tabindex="-1" role="dialog" aria-labelledby="submission" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Thanks for applying!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+    <br><br>
+    <div class="container">
+      <h2 style='text-align: center;'>Property Portfolio</h3>
+      <br>
+    </div>
+      <!--Gallery of Homes-->
+      <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 mb-3">
+          <a href="../Property_management_company/123_home_st.html">
+          <img src="../Property_management_company/Property_images/123_home/exterior1.jpg" alt="123 Home St" class="fluid img-thumbnail portfolio_image">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+          <a href="#test">
+          <img src="../Property_management_company/Property_images/555_Shire/exterior1.jpg" alt="555 Shire" class="fluid img-thumbnail portfolio_image">
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+          <a href="#test">
+          <img src="../Property_management_company/Property_images/19_square/exterior1.jpg" alt="19 Square" class="fluid img-thumbnail portfolio_image">
+        </div>
+      </div>
+    </div>
+</html>

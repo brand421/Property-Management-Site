@@ -1,0 +1,11 @@
+.portfolio_image {
+    height: 225px;
+    width: 525px;
+}
+
+.portfolio_image:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    z-index: 1;
+    position: relative;
+}
